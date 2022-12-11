@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bg {
+  padding: 48px 0;
+  background: linear-gradient(to right, #348f50, #56b4d3);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hidden {
+  opacity: 0%;
+  /* height: 1rem; */
+}
+h1 {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+h1::after {
+  content: "gd";
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+  font-size: 0.15em;
+  letter-spacing: 0;
+}
+.form {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  color: #e6e6e6;
+}
+.form span {
+  font-size: 2rem;
+}
+.form input {
+  width: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+  border: 0px;
+  opacity: 80%;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.form a {
+  display: inline-block;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 48px;
+  background-color: white;
+  opacity: 50%;
+  margin-top: 48px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  border: 1px solid whitesmoke;
+}
+.msg-erro {
+  height: 1rem;
+}
+.msg-erro span {
+  color: tomato;
+  display: inline-block;
+  font-size: 0.875rem;
+  /* font-weight: 700; */
+  padding: 4px 12px;
+  margin-top: 12px;
+  background-color: #ffffff33;
+  border-radius: 4px 4px 4px 4px;
+}
+.resultado-bg {
+  padding: 3rem;
+  background-color: #edf7f9;
+  height: 80px;
+  align-self: center;
+}
+.resultado {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.resultado li {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #505050;
+  padding: 8px 24px;
+  border: 1px solid #d7d7d7;
+  box-shadow: 1px 1px 4px #d7d7d7;
+  background-color: #348f5055;
+  border-radius: 16px 16px 0 16px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 32px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  font-size: 1.15em;
+  color: #56b4d3;
+  transition: 0.3s;
+}

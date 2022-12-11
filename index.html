@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="bg">
+            <div class="container">
+                <h1>Sorteador</h1>
+                <div class="form">
+                    <div>
+                        <span>Escolha</span>
+                        <input type="number" name="quantidade" id="quantidade" value="5" min="1" max="10">
+                        <span>número entre</span>
+                        <input type="number" name="min" id="min" value="0" min="0">
+                        <span>e</span>
+                        <input type="number" name="max" id="max" value="10" min="2">
+                    </div>
+                    <div class="msg-erro hidden">
+                        <span>mensagem de erro de validação de campos</span>
+                    </div>
+                    <div>
+                        <a href="#" onclick="sortear()">sortear</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultado-bg">
+            <ul class="resultado"></ul>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/guilhermeodionisio/" target="_blank">@guidionisi</a>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
